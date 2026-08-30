@@ -1,0 +1,38 @@
+.dashboard { min-height: 100vh; padding: 48px clamp(20px, 6vw, 96px); color: #172033; background: #f5f7fb; }
+.dashboard-hero { display: flex; align-items: center; justify-content: space-between; gap: 28px; max-width: 1120px; margin: 0 auto 30px; padding: 38px 42px; color: #fff; border-radius: 24px; background: linear-gradient(118deg, #172554, #3730a3 58%, #4f46e5); box-shadow: 0 20px 45px rgba(49, 46, 129, .24); }
+.eyebrow, .card-kicker { margin: 0; font-size: .72rem; font-weight: 800; letter-spacing: .12em; }
+.eyebrow { color: #c7d2fe; }
+.dashboard-hero h1 { margin: 10px 0; font-size: clamp(1.9rem, 4vw, 2.8rem); line-height: 1.1; }
+.hero-copy { margin: 0; color: #e0e7ff; }
+.hero-badge { display: grid; min-width: 115px; min-height: 115px; place-content: center; text-align: center; border: 1px solid rgba(255,255,255,.3); border-radius: 20px; background: rgba(255,255,255,.12); }
+.hero-badge span { font-size: 2.25rem; font-weight: 800; }
+.hero-badge small { color: #e0e7ff; }
+.profile-card { display: flex; align-items: center; gap: 16px; max-width: 1120px; margin: 0 auto 24px; }
+.profile-avatar { display: grid; width: 52px; height: 52px; flex: 0 0 52px; place-items: center; color: #fff; font-size: 1.25rem; font-weight: 800; border-radius: 50%; background: #4f46e5; }
+.profile-details h2 { margin: 4px 0; }
+.profile-details p:last-child { margin: 0; color: #64748b; }
+.logout-button { margin-left: auto; padding: 10px 16px; color: #b91c1c; font: inherit; font-weight: 700; border: 1px solid #fecaca; border-radius: 9px; cursor: pointer; background: #fff5f5; }
+.logout-button:hover { background: #fee2e2; }
+.dashboard-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(250px, .85fr); gap: 24px; max-width: 1120px; margin: 0 auto 24px; }
+.dashboard-card { padding: 30px; border: 1px solid #e6eaf2; border-radius: 18px; background: #fff; box-shadow: 0 10px 26px rgba(15, 23, 42, .05); }
+.card-kicker { color: #4f46e5; }
+.dashboard-card h2 { margin: 9px 0; font-size: 1.35rem; }
+.dashboard-card > p:not(.card-kicker) { color: #64748b; line-height: 1.55; }
+.role-card label { display: block; margin: 26px 0 8px; font-size: .9rem; font-weight: 700; }
+.role-card select { width: 100%; padding: 13px 14px; color: #172033; font: inherit; border: 1px solid #cbd5e1; border-radius: 10px; background: #fff; }
+.role-card select:focus { outline: 3px solid rgba(79,70,229,.16); border-color: #4f46e5; }
+.start-interview-button { width: 100%; margin-top: 16px; padding: 14px 18px; color: #fff; font: inherit; font-weight: 700; border: 0; border-radius: 10px; cursor: pointer; background: #4f46e5; transition: background .2s ease, transform .2s ease; }
+.start-interview-button:hover { background: #3730a3; transform: translateY(-1px); }
+.start-interview-button span { margin-left: 8px; font-size: 1.1em; }
+.progress-card { display: flex; flex-direction: column; }
+.progress-ring { position: relative; display: grid; width: 116px; height: 116px; margin: 20px 0; place-items: center; color: #4f46e5; font-size: 1.35rem; font-weight: 800; border-radius: 50%; background: conic-gradient(#4f46e5 var(--progress), #e0e7ff 0); }
+.progress-ring::before { position: absolute; width: 92px; height: 92px; content: ""; border-radius: 50%; background: #fff; }
+.progress-ring span { position: relative; }
+.history-card { display: flex; align-items: center; justify-content: space-between; gap: 24px; max-width: 1120px; margin: 0 auto; }
+.empty-history { margin: 0; text-align: right; }
+.history-list { display: grid; width: min(100%, 520px); gap: 10px; }
+.history-item { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px 14px; color: #475569; font-size: .88rem; border-radius: 9px; background: #f8fafc; }
+.history-item div { display: grid; gap: 3px; }
+.history-item strong { color: #172033; }
+.history-item span { white-space: nowrap; }
+@media (max-width: 700px) { .dashboard { padding: 24px 16px; } .dashboard-hero, .history-card { align-items: flex-start; flex-direction: column; padding: 28px; } .profile-card { align-items: flex-start; flex-wrap: wrap; } .logout-button { margin-left: 0; } .dashboard-grid { grid-template-columns: 1fr; } .empty-history { text-align: left; } .history-item { align-items: flex-start; flex-direction: column; gap: 6px; } }
